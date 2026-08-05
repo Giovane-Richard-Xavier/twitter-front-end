@@ -1,3 +1,4 @@
+import { SigninForm } from "@/components/auth/siginin-form";
 import { Logo } from "@/components/ui/logo";
 import Link from "next/link";
 
@@ -10,7 +11,7 @@ export default function SigninPage() {
       </div>
 
       <div className="flex flex-col gap-4 items-center justify-start mb-5">
-        formulário ...
+        <SigninForm />
       </div>
 
       <div className="flex flex-col items-center justify-center md:flex-row gap-1">
