@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { Button } from "../ui/Button";
 import { Input } from "../ui/Input";
 
 export const SigninForm = () => {
@@ -13,6 +14,8 @@ export const SigninForm = () => {
   return (
     <>
       <Input type="password" />
+
+      <Button size="icon">...</Button>
     </>
   );
 };
