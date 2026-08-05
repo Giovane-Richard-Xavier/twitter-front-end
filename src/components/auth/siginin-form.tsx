@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Button } from "../ui/Button";
 import { Input } from "../ui/Input";
+import { Label } from "../ui/Label";
 
 export const SigninForm = () => {
   const router = useRouter();
@@ -13,9 +14,25 @@ export const SigninForm = () => {
 
   return (
     <>
-      <Input type="password" />
+      <Input
+        // label="E-mail"
+        label={<Label required>E-mail</Label>}
+        id="email"
+        placeholder="Digite seu e-mail"
+        type="text"
+        className="w-xs"
+      />
 
-      <Button size="icon">...</Button>
+      <Input
+        // label="Senha"
+        label={<Label required>Senha</Label>}
+        id="password"
+        placeholder="Digite sua senha"
+        type="password"
+        className="w-xs"
+      />
+
+      <Button className="w-xs mt-5">Entrar</Button>
     </>
   );
 };
