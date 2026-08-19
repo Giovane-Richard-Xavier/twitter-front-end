@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Checkbox } from "@/components/ui/Checkbox";
 import { TextArea } from "@/components/ui/TextArea";
 
 export default function Page() {
@@ -40,6 +41,8 @@ export default function Page() {
             placeholder="Informe a descrição..."
           />
         </div>
+
+        <Checkbox id="genre" label="Genero" />
       </section>
     </main>
   );
