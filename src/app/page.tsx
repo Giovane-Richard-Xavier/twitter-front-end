@@ -8,11 +8,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Checkbox } from "@/components/ui/Checkbox";
+import { TextArea } from "@/components/ui/TextArea";
 
 export default function Page() {
   return (
     <main className="w-screen min-h-screen">
-      <section className="flex items-center justify-center w-full h-screen">
+      <section className="flex flex-col gap-10 items-center justify-center w-full h-screen">
         <Card className="w-full max-w-md mx-auto rounded-md">
           <CardHeader>
             <CardTitle>Bem-vindo ao sistema</CardTitle>
@@ -31,6 +33,16 @@ export default function Page() {
             <Button variant="secondary">Cancelar</Button>
           </CardFooter>
         </Card>
+
+        <div className="max-w-md w-full">
+          <TextArea
+            id="description"
+            label="Descrição"
+            placeholder="Informe a descrição..."
+          />
+        </div>
+
+        <Checkbox id="genre" label="Genero" />
       </section>
     </main>
   );
