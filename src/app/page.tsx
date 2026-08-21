@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/Checkbox";
+import { RadioButton } from "@/components/ui/Radiobutton";
 import { TextArea } from "@/components/ui/TextArea";
 
 export default function Page() {
@@ -47,6 +48,8 @@ export default function Page() {
         </div>
 
         <Checkbox id="terms" label="Aceito os termos de uso" />
+
+        <RadioButton id="genre" label="Sexo" />
         {/* <form onSubmit={() => onSubmit()}>
 
           <button type="submit">Criar conta</button>
