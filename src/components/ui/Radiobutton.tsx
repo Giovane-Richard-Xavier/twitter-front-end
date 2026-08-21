@@ -30,7 +30,11 @@ export const RadioButton = forwardRef<HTMLInputElement, RadioButtonProps>(
             {...props}
           />
 
-          {label && <Label htmlFor={id}>{label}</Label>}
+          {label && (
+            <Label htmlFor={id} className="cursor-pointer">
+              {label}
+            </Label>
+          )}
         </div>
 
         {error && <span className="text-xs text-red-500">{error}</span>}
