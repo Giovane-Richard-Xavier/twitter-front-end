@@ -9,9 +9,14 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/Checkbox";
+import { RadioButton } from "@/components/ui/Radiobutton";
 import { TextArea } from "@/components/ui/TextArea";
 
 export default function Page() {
+  function onSubmit() {
+    // console.log(data);
+  }
+
   return (
     <main className="w-screen min-h-screen">
       <section className="flex flex-col gap-10 items-center justify-center w-full h-screen">
@@ -42,7 +47,13 @@ export default function Page() {
           />
         </div>
 
-        <Checkbox id="genre" label="Genero" />
+        <Checkbox id="terms" label="Aceito os termos de uso" />
+
+        <RadioButton id="genre" label="Sexo" />
+        {/* <form onSubmit={() => onSubmit()}>
+
+          <button type="submit">Criar conta</button>
+        </form> */}
       </section>
     </main>
   );
