@@ -13,7 +13,7 @@ export const SigninForm = () => {
   const [passwordField, setPasswordField] = useState("");
 
   return (
-    <>
+    <div className="flex flex-col gap-5 max-w-lg p-8 rounded-sm border border-zinc-200">
       <Input
         // label="E-mail"
         label={<Label required>E-mail</Label>}
@@ -33,6 +33,6 @@ export const SigninForm = () => {
       />
 
       <Button className="w-xs mt-5">Entrar</Button>
-    </>
+    </div>
   );
 };
