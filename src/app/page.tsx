@@ -23,11 +23,7 @@ export default function Page() {
       <section className="flex items-center justify-center h-screen">
         <SigninForm />
         <SigninForm />
-        <SigninForm />
-        <SigninForm />
-        <SigninForm />
-        <SigninForm />
-        <SigninForm />
+      
       </section>
     </main>
   );
