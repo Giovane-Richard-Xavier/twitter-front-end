@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Button } from "../ui/Button";
 import { Input } from "../ui/Input";
 import { Label } from "../ui/Label";
+import { IconEye, IconEyeOff, IconMail } from "@tabler/icons-react";
 
 export const SigninForm = () => {
   const router = useRouter();
@@ -21,6 +22,7 @@ export const SigninForm = () => {
         placeholder="Digite seu e-mail"
         type="text"
         className="w-xs"
+        rightIcon={<IconMail size={18} />}
       />
 
       <Input
@@ -30,6 +32,7 @@ export const SigninForm = () => {
         placeholder="Digite sua senha"
         type="password"
         className="w-xs"
+        showPasswordToggle
       />
 
       <Button className="w-xs mt-5">Entrar</Button>
