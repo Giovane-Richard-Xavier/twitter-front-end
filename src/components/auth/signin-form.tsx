@@ -6,6 +6,8 @@ import { useState } from "react";
 import { Button } from "../ui/Button";
 import { Input } from "../ui/Input";
 import { Label } from "../ui/Label";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 export const SigninForm = () => {
   const router = useRouter();
