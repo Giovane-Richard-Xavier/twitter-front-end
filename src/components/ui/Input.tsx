@@ -65,7 +65,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
             className={`
               h-10
               w-full
-              rounded-lg
+              rounded-3xl
               border
               px-3
               ${icon ? "pr-10" : ""}
@@ -73,7 +73,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
               outline-none
               transition-colors
               placeholder-zinc-500
-              focus:border-blue-500
+              focus:border-white
               disabled:cursor-not-allowed
               disabled:opacity-50
               read-only:opacity-50

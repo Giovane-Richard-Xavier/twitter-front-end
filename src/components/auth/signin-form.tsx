@@ -17,37 +17,40 @@ export const SigninForm = () => {
 
   const handleSubmit = () => {
     console.log("email ->", emailField);
+    console.log("senha ->", passwordField);
   };
 
   return (
-    <div className="flex flex-col gap-6 p-8 rounded-sm border border-zinc-200 mt-10 mb-14">
-      <form action={handleSubmit}>
+    <form action={handleSubmit}>
+      <div className="flex flex-col gap-6 p-8 rounded-sm border border-zinc-200 mt-10 mb-14">
         <Input
-          // label="E-mail"
-          label={<Label required>E-mail</Label>}
+          label="E-mail"
+          // label={<Label required>E-mail</Label>}
           id="email"
           placeholder="Digite seu e-mail"
           type="text"
           className="w-xs"
-          rightIcon={<IconMail size={18} />}
+          // rightIcon={<IconMail size={18} />}
           value={emailField}
           onChange={(e) => setEmailField(e.target.value)}
         />
 
         <Input
-          // label="Senha"
-          label={<Label required>Senha</Label>}
+          label="Senha"
+          // label={<Label required>Senha</Label>}
           id="password"
           placeholder="Digite sua senha"
           type="password"
           className="w-xs"
           showPasswordToggle
+          value={passwordField}
+          onChange={(e) => setPasswordField(e.target.value)}
         />
 
         <Button type="submit" className="w-xs mt-5">
           Entrar
         </Button>
-      </form>
-    </div>
+      </div>
+    </form>
   );
 };
