@@ -5,20 +5,33 @@ import { useState } from "react";
 import { Button } from "../ui/Button";
 import { Input } from "../ui/Input";
 
-export const SigninForm = () => {
+export const SignupForm = () => {
   const router = useRouter();
 
+  const [nameField, setNameField] = useState("");
   const [emailField, setEmailField] = useState("");
   const [passwordField, setPasswordField] = useState("");
 
   const handleSubmit = () => {
     console.log("email ->", emailField);
     console.log("senha ->", passwordField);
+    router.replace("/");
   };
 
   return (
     <form action={handleSubmit}>
       <div className="flex flex-col gap-6 p-8 mt-10 mb-14">
+        <Input
+          label="Nome"
+          // label={<Label required>E-mail</Label>}
+          id="name"
+          placeholder="Digite seu nome"
+          type="text"
+          className="w-xs"
+          value={nameField}
+          onChange={(e) => setNameField(e.target.value)}
+        />
+
         <Input
           label="E-mail"
           // label={<Label required>E-mail</Label>}
@@ -44,7 +57,7 @@ export const SigninForm = () => {
         />
 
         <Button type="submit" className="w-xs mt-16">
-          Entrar
+          Criar conta
         </Button>
       </div>
     </form>

@@ -47,7 +47,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         disabled={loading || disabled}
         className={cn(
-          "rounded-md transition font-medium",
+          "rounded-3xl transition font-medium",
           "disabled:opacity-50",
           "disabled:pointer-events-none",
           "cursor-pointer",

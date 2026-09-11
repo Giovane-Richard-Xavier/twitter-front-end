@@ -1,4 +1,4 @@
-import { SigninForm } from "@/components/auth/signin-form";
+import { SignupForm } from "@/components/auth/signup-form";
 import { Logo } from "@/components/ui/logo";
 import Link from "next/link";
 
@@ -11,7 +11,7 @@ export default function SignupPage() {
       </div>
 
       <div className="flex flex-col gap-4 items-center justify-start mb-5">
-        <SigninForm />
+        <SignupForm />
       </div>
 
       <div className="flex flex-col items-center justify-center md:flex-row gap-1">
