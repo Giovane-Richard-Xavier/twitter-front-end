@@ -1,5 +1,6 @@
 import { NavItem } from "@/components/nav/nav-item";
 import { NavLogout } from "@/components/nav/nav-logout";
+import { NavMyprofile } from "@/components/nav/nav-myprofile";
 import { Logo } from "@/components/ui/logo";
 import { faHouse, faUser } from "@fortawesome/free-solid-svg-icons";
 
@@ -12,7 +13,7 @@ type Props = {
 export default function Layout({ children }: Props) {
   return (
     <main className="min-h-screen flex justify-center mx-auto max-w-7xl">
-      <section className="flex lg:flex flex-col sticky top-0 h-screen w-72 px-3 border-r-2 border-gray-900">
+      <section className="hidden lg:flex flex-col sticky top-0 h-screen w-72 px-3 border-r-2 border-gray-900">
         <div className="flex-1 mt-6">
           <Logo size={32} />
           <nav className="mt-11">
@@ -23,6 +24,7 @@ export default function Layout({ children }: Props) {
 
         <div className="flex flex-col gap-4 mb-6">
           <NavLogout />
+          <NavMyprofile />
         </div>
       </section>
 
