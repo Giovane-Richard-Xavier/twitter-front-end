@@ -1,5 +1,8 @@
 import { user } from "@/data/user";
-import { RecommendationItem } from "./recommendation-item";
+import {
+  RecommendationItem,
+  RecommendationItemSkeleton,
+} from "./recommendation-item";
 
 export const RecommendationArea = () => {
   return (
@@ -8,6 +11,7 @@ export const RecommendationArea = () => {
       <div className="flex flex-col gap-4 p-6 pt-0">
         <RecommendationItem user={user} />
         <RecommendationItem user={user} />
+        <RecommendationItemSkeleton />
       </div>
     </div>
   );
