@@ -28,6 +28,14 @@ export default function TweetPage() {
         <TweetItem tweet={tweet} hideComments />
         <TweetItem tweet={tweet} hideComments />
         <TweetItem tweet={tweet} hideComments />
+
+        <TweetItem tweet={tweet} hideComments />
+        <TweetItem tweet={tweet} hideComments />
+        <TweetItem tweet={tweet} hideComments />
+
+        <TweetItem tweet={tweet} hideComments />
+        <TweetItem tweet={tweet} hideComments />
+        <TweetItem tweet={tweet} hideComments />
       </div>
     </div>
   );
