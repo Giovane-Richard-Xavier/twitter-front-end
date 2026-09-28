@@ -7,7 +7,6 @@ export const ProfileFeed = () => {
       <TweetItem tweet={tweet} />
       <TweetItem tweet={tweet} />
       <TweetItem tweet={tweet} />
-      <TweetItem tweet={tweet} />
     </div>
   );
 };
